@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  cursor: pointer;
+  transition: font-weight 0.3s ease;
+  font-weight: bold;
+}
