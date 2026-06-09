@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/home.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="d-flex align-items-center bg justify-content-center p-3"
+        style="background-color: rgba(145, 47, 22, 0.957)"
+      >
+        <img
+          src="../Images/cvrLogo.png"
+          alt="logo"
+          class="img-fluid"
+          style="max-width: 100px"
+        />
+        <h1 class="display-4 strong text-light ms-3">
+          CVR College Of Engineering
+        </h1>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-dark p-2"
+              style="width: 100px"
+              onclick="window.location.href = 'register.html'"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="d-flex align-items-center bg justify-content-center p-3"
+        style="background-color: rgba(145, 47, 22, 0.957)"
+      >
+        <h1 class="dispaly-6 text-light">Gallery</h1>
+      </div>
+      <div
+        class="container bg-light d-flex justify-content-center flex-column align-items-center"
+      >
+        <div>
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide w-100"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner" style="width: 500px; height: 300px">
+              <div class="carousel-item active w-100">
+                <img
+                  src="../Images/hackathon.jpg"
+                  class="d-block w-100"
+                  alt="hackathon"
+                  height="300px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Images/coding.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  height="300px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Images/project.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  height="300px"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="mt-4">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 200px">
+                  <img
+                    src="../Images/cultural.jpg"
+                    alt="cultural"
+                    class="image-float"
+                    height="200px"
+                    width="230px"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 200px">
+                  <img
+                    src="../Images/project.jpg"
+                    alt="cultural"
+                    class="image-float"
+                    height="200px"
+                    width="230px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 200px">
+                  <img
+                    src="../Images/poster.png"
+                    alt="cultural"
+                    class="image-float"
+                    height="200px"
+                    width="230px"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 200px">
+                  <img
+                    src="../Images/tquiz.jpg"
+                    alt="cultural"
+                    class="image-float"
+                    height="200px"
+                    width="230px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark">
+      <div
+        class="d-flex align-items-center bg justify-content-center p-3 mt-4"
+        style="background-color: rgba(145, 47, 22, 0.957)"
+      >
+        <p class="text-light mb-0 me-4">
+          &copy; 2026 CVR College of Engineering, Vastu Nagar 084414-252222. All
+          rights reserved.
+        </p>
+        <a href="#mail" class="text-light mb-0 text-decoration-none me-4"
+          >Mail</a
+        >
+        <a href="#url" class="text-light mb-0 text-decoration-none">Instgram</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
