@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/register.css" />
+  </head>
+  <body style="background-color: rgb(209, 214, 219)">
+    <header>
+      <div
+        class="d-flex align-items-center bg justify-content-center p-3"
+        style="background-color: rgba(145, 47, 22, 0.957)"
+      >
+        <img
+          src="../Images/cvrLogo.png"
+          alt="logo"
+          class="img-fluid"
+          style="max-width: 100px"
+        />
+        <h1 class="display-4 strong text-light ms-3">
+          CVR College Of Engineering
+        </h1>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-dark p-2"
+              style="width: 100px"
+              onclick="window.location.href = 'register.html'"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container bg-light p-5 rounded" style="width: 50%">
+        <h3 class="mb-3">Registration Page</h3>
+        <form class="needs-validation">
+          <div class="mb-3 form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="name" class="form-label fw-bold">Student Name</label>
+            <div class="invalid-feedback">Please Enter your name.</div>
+          </div>
+          <div class="mb-3 form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your Roll Number"
+              required
+            />
+            <label for="name" class="form-label fw-bold">Roll Number</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your Roll Number"
+              required
+            />
+            <label for="name" class="form-label fw-bold">Branch</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <label for="email" class="form-label fw-bold">Email address</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input
+              type="tel"
+              class="form-control"
+              id="phno"
+              placeholder="Enter your mobile number"
+              required
+            />
+            <label for="phno" class="form-label fw-bold">Mobile Number</label>
+            <div class="invalid-feedback">Please Enter your mobile number.</div>
+          </div>
+          <div class="mb-3 form-floating">
+            <select class="form-control" id="course" required>
+              <option value="" disabled selected>Select Event</option>
+              <option value="tquiz">Technical Quiz</option>
+              <option value="hackathon">Hackathon</option>
+              <option value="poster">Poster Presentation</option>
+              <option value="coding">Coding Contest</option>
+              <option value="project">Project Expo</option>
+              <option value="cultural">Cultural Fest</option>
+            </select>
+            <label for="course" class="form-label fw-bold">Event</label>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="bg-success">
+              <p id="result"></p>
+            </div>
+          </div>
+        </form>
+        <button type="button" class="btn btn-dark" id="registerBtn">
+          Register
+        </button>
+      </div>
+      <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Status</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Rgistration Successful</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const registerBtn = document.getElementById("registerBtn");
+      const myModal = new bootstrap.Modal(document.getElementById("myModal"));
+
+      registerBtn.addEventListener("click", function () {
+        myModal.show();
+      });
+    </script>
+  </body>
+</html>
