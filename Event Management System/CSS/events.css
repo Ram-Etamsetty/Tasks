@@ -1,0 +1,10 @@
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in;
+}
+main .card {
+  height: 440px;
+}
+main .card img {
+  height: 200px;
+}
